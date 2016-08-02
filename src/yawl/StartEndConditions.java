@@ -54,6 +54,7 @@ public class StartEndConditions extends AbstractModelConstraint {
 						}
 					}
 					}
+		
 					if (startCount != 1 || endCount != 1) {
 						// if there is not exactly one start place and exactly
 						// one
