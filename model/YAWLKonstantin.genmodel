@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/dk.dtu.konstantin.yawl/src" modelPluginID="dk.dtu.konstantin.yawl"
+    modelName="YAWLKonstantin" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    usedGenPackages="../../org.pnml.tools.epnk/model/PNMLCoreModel.genmodel#//pnmlcoremodel ../../org.pnml.tools.epnk/model/PNMLDataTypes.genmodel#//pnmldatatypes"
+    importOrganizing="true">
+  <foreignModel>YAWLKonstantin.ecore</foreignModel>
+  <genPackages prefix="Yawl" disposableProviderFactory="true" ecorePackage="YAWLKonstantin.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="YAWLKonstantin.ecore#//TypeOfC">
+      <genEnumLiterals ecoreEnumLiteral="YAWLKonstantin.ecore#//TypeOfC/Normal"/>
+      <genEnumLiterals ecoreEnumLiteral="YAWLKonstantin.ecore#//TypeOfC/Start"/>
+      <genEnumLiterals ecoreEnumLiteral="YAWLKonstantin.ecore#//TypeOfC/Finish"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="YAWLKonstantin.ecore#//TypeOfT">
+      <genEnumLiterals ecoreEnumLiteral="YAWLKonstantin.ecore#//TypeOfT/AND"/>
+      <genEnumLiterals ecoreEnumLiteral="YAWLKonstantin.ecore#//TypeOfT/XOR"/>
+      <genEnumLiterals ecoreEnumLiteral="YAWLKonstantin.ecore#//TypeOfT/OR"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="YAWLKonstantin.ecore#//TypeOfA">
+      <genEnumLiterals ecoreEnumLiteral="YAWLKonstantin.ecore#//TypeOfA/Normal"/>
+      <genEnumLiterals ecoreEnumLiteral="YAWLKonstantin.ecore#//TypeOfA/Reset"/>
+    </genEnums>
+    <genClasses ecoreClass="YAWLKonstantin.ecore#//YAWLNet"/>
+    <genClasses ecoreClass="YAWLKonstantin.ecore#//Place">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference YAWLKonstantin.ecore#//Place/type"/>
+    </genClasses>
+    <genClasses ecoreClass="YAWLKonstantin.ecore#//Transition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference YAWLKonstantin.ecore#//Transition/typeOfJoin"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference YAWLKonstantin.ecore#//Transition/typeOfSplit"/>
+    </genClasses>
+    <genClasses ecoreClass="YAWLKonstantin.ecore#//TypeOfCondition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute YAWLKonstantin.ecore#//TypeOfCondition/text"/>
+    </genClasses>
+    <genClasses ecoreClass="YAWLKonstantin.ecore#//TypeOfTransition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute YAWLKonstantin.ecore#//TypeOfTransition/text"/>
+    </genClasses>
+    <genClasses ecoreClass="YAWLKonstantin.ecore#//Arc">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference YAWLKonstantin.ecore#//Arc/type"/>
+    </genClasses>
+    <genClasses ecoreClass="YAWLKonstantin.ecore#//TypeOfArc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute YAWLKonstantin.ecore#//TypeOfArc/text"/>
+    </genClasses>
+    <genClasses ecoreClass="YAWLKonstantin.ecore#//YawlNetArcAnnotation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute YAWLKonstantin.ecore#//YawlNetArcAnnotation/text"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
