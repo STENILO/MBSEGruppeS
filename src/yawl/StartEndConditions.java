@@ -40,7 +40,7 @@ public class StartEndConditions extends AbstractModelConstraint {
 						if (view.getElement() instanceof Place) {
 							Place place = (Place) view.getElement();
 
-							if ((place.getType().getText() != null)) {
+							if ((place.getType() != null)) {
 							
 								if (place.getType().getText().getValue() == 1 ) {
 									startCount++;
