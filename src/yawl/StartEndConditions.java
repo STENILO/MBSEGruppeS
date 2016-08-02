@@ -16,6 +16,8 @@ import org.pnml.tools.epnk.pnmlcoremodel.PetriNet;
  * place and one end place.
  *
  * @author ekki@dtu.dk
+ * @author Martin
+ * @author Thomas
  * @generated NOT
  */
 public class StartEndConditions extends AbstractModelConstraint {
