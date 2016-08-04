@@ -482,6 +482,7 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 		addEEnumLiteral(typeOfTEEnum, TypeOfT.AND);
 		addEEnumLiteral(typeOfTEEnum, TypeOfT.XOR);
 		addEEnumLiteral(typeOfTEEnum, TypeOfT.OR);
+		addEEnumLiteral(typeOfTEEnum, TypeOfT.SINGLE);
 
 		initEEnum(typeOfAEEnum, TypeOfA.class, "TypeOfA");
 		addEEnumLiteral(typeOfAEEnum, TypeOfA.NORMAL);

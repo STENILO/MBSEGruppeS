@@ -46,7 +46,7 @@ public enum TypeOfT implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	OR(2, "OR", "OR");
+	OR(2, "OR", "OR"),
 
 	/**
 	 * The '<em><b>AND</b></em>' literal value.
@@ -61,6 +61,23 @@ public enum TypeOfT implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
+	
+	SINGLE(3, "SINGLE", "SINGLE");
+
+	/**
+	 * The '<em><b>SINGLE</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>AND</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #SINGLE
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	
 	public static final int AND_VALUE = 0;
 
 	/**
@@ -99,11 +116,22 @@ public enum TypeOfT implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	
+	public static final int SINGLE_VALUE = 3;
+
+	/**
+	 * An array of all the '<em><b>Type Of T</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	
 	private static final TypeOfT[] VALUES_ARRAY =
 		new TypeOfT[] {
 			AND,
 			XOR,
 			OR,
+			SINGLE,
 		};
 
 	/**
@@ -163,6 +191,7 @@ public enum TypeOfT implements Enumerator {
 			case AND_VALUE: return AND;
 			case XOR_VALUE: return XOR;
 			case OR_VALUE: return OR;
+			case SINGLE_VALUE: return SINGLE;
 		}
 		return null;
 	}
