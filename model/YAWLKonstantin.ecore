@@ -15,18 +15,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="TypeOfCondition" eSuperTypes="../../org.pnml.tools.epnk/model/PNMLCoreModel.ecore#//Attribute">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" lowerBound="1" eType="#//TypeOfC"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="TypeOfC">
-    <eLiterals name="Normal" literal="Normal"/>
-    <eLiterals name="Start" value="1" literal="Start"/>
-    <eLiterals name="Finish" value="2"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TypeOfTransition" eSuperTypes="../../org.pnml.tools.epnk/model/PNMLCoreModel.ecore#//Attribute">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" lowerBound="1" eType="#//TypeOfT"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="TypeOfT">
-    <eLiterals name="AND" literal="AND"/>
-    <eLiterals name="XOR" value="1"/>
-    <eLiterals name="OR" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Arc" eSuperTypes="../../org.pnml.tools.epnk/model/PNMLCoreModel.ecore#//Arc">
     <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//TypeOfArc"
@@ -38,6 +28,16 @@
   <eClassifiers xsi:type="ecore:EEnum" name="TypeOfA">
     <eLiterals name="Normal" literal="Normal"/>
     <eLiterals name="Reset" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TypeOfT">
+    <eLiterals name="AND" literal="AND"/>
+    <eLiterals name="XOR" value="1"/>
+    <eLiterals name="OR" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TypeOfC">
+    <eLiterals name="Normal" literal="Normal"/>
+    <eLiterals name="Start" value="1" literal="Start"/>
+    <eLiterals name="Finish" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="YawlNetArcAnnotation" eSuperTypes="../../org.pnml.tools.epnk/model/PNMLCoreModel.ecore#//Label">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" lowerBound="1" eType="ecore:EDataType ../../org.pnml.tools.epnk/model/PNMLDataTypes.ecore#//PositiveInteger"
